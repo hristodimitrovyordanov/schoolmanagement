@@ -1,0 +1,6 @@
+package hristo.com.model;
+
+public enum Subject {
+
+    MATHEMATICS, ENGLISH, ART, MUSIC, BULGARIAN, GEOGRAPHY, BIOLOGY, PHYSICS, CHEMISTRY, HISTORY, SPORT
+}
