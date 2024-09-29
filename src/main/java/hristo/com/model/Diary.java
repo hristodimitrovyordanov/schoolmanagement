@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Diary {
 
-    private final String schoolClassName;
+    private String schoolClassName;
     private final Map<Student, Map<Subject, List<Integer>>> diaryOfClass;
 
     public Diary(String schoolClassName) {
@@ -16,6 +16,10 @@ public class Diary {
 
     public String getSchoolClassName() {
         return schoolClassName;
+    }
+
+    public void setSchoolClassName(String schoolClassName) {
+        this.schoolClassName = schoolClassName;
     }
 
     public Map<Student, Map<Subject, List<Integer>>> getDiaryOfClass() {

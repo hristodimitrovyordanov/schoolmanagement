@@ -56,7 +56,10 @@ public class SchoolClassService {
         SchoolClass schoolClass = getSchoolClass(oldSchoolClassName);
 
         if (schoolClass != null) {
+            Diary diary = schoolClass.getDiary();
             schoolClass.setName(newSchoolClassName);
+            diary.setSchoolClassName(newSchoolClassName);
+
             return true;
         }
 
