@@ -19,10 +19,6 @@ public class Teacher {
         this.name = name;
     }
 
-    public Subject getSubjectOfTeaching() {
-        return subjectOfTeaching;
-    }
-
     public void setSubjectOfTeaching(Subject subjectOfTeaching) {
         this.subjectOfTeaching = subjectOfTeaching;
     }

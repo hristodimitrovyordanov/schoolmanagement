@@ -3,12 +3,7 @@ package hristo.com.service;
 import hristo.com.controller.console.ConsoleReader;
 import hristo.com.model.School;
 
-import java.util.Scanner;
-
 public class SchoolService {
-
-    private static final Scanner scanner = new Scanner(System.in);
-
 
     public School getSchool(String inputMessage) {
         String schoolName;

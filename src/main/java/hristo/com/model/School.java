@@ -6,10 +6,10 @@ import java.util.List;
 public class School {
 
     private String name;
-    private List<SchoolClass> classes;
-    private List<Teacher> teachers;
-    private List<Student> students;
-    private List<Diary> diaries;
+    private final List<SchoolClass> classes;
+    private final List<Teacher> teachers;
+    private final List<Student> students;
+    private final List<Diary> diaries;
     public static boolean isSchoolCreated = false;
 
     private static School school = null;
@@ -42,32 +42,16 @@ public class School {
         return classes;
     }
 
-    public void setClasses(List<SchoolClass> classes) {
-        this.classes = classes;
-    }
-
     public List<Teacher> getTeachers() {
         return teachers;
-    }
-
-    public void setTeachers(List<Teacher> teachers) {
-        this.teachers = teachers;
     }
 
     public List<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
-
     public List<Diary> getDiaries() {
         return diaries;
-    }
-
-    public void setDiaries(List<Diary> diaries) {
-        this.diaries = diaries;
     }
 
     @Override

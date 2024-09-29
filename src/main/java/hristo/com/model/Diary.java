@@ -6,8 +6,8 @@ import java.util.Map;
 
 public class Diary {
 
-    private String schoolClassName;
-    private Map<Student, Map<Subject, List<Integer>>> diaryOfClass;
+    private final String schoolClassName;
+    private final Map<Student, Map<Subject, List<Integer>>> diaryOfClass;
 
     public Diary(String schoolClassName) {
         this.schoolClassName = schoolClassName;
@@ -18,16 +18,8 @@ public class Diary {
         return schoolClassName;
     }
 
-    public void setSchoolClassName(String schoolClassName) {
-        this.schoolClassName = schoolClassName;
-    }
-
     public Map<Student, Map<Subject, List<Integer>>> getDiaryOfClass() {
         return diaryOfClass;
-    }
-
-    public void setDiaryOfClass(Map<Student, Map<Subject, List<Integer>>> diaryOfClass) {
-        this.diaryOfClass = diaryOfClass;
     }
 
     @Override

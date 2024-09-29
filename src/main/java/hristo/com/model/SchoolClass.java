@@ -7,8 +7,8 @@ public class SchoolClass {
 
     private String name;
     private Teacher teacherOfTheSchoolClass;
-    private List<Student> studentsInClass;
-    private Diary diary;
+    private final List<Student> studentsInClass;
+    private final Diary diary;
 
 
 
@@ -16,11 +16,6 @@ public class SchoolClass {
         this.name = name;
         this.teacherOfTheSchoolClass = teacher;
         this.diary = diary;
-        this.studentsInClass = new ArrayList<>();
-    }
-
-    public SchoolClass(String name,  Diary diary) {
-        this(name, null, diary);
         this.studentsInClass = new ArrayList<>();
     }
 
@@ -44,16 +39,8 @@ public class SchoolClass {
         return studentsInClass;
     }
 
-    public void setStudentsInClass(List<Student> studentsInClass) {
-        this.studentsInClass = studentsInClass;
-    }
-
     public Diary getDiary() {
         return diary;
-    }
-
-    public void setDiary(Diary diary) {
-        this.diary = diary;
     }
 
     @Override
